@@ -9,28 +9,119 @@
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative w-1/2 h-12 bg-red-200 m-1">
+      <p>Parent Relative Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        Absolute bottom right child
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <div class="flex space-x-24">
+      <div class="flex-col">
+        <p>relative working</p>
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
+            absolute left 0
+          </div>
+        </div>
+        <!-- Top right corner -->
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300">
+            absolute right 0
+          </div>
+        </div>
+        <!-- Bottom left corner -->
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300">
+            absolute left 0 bottom 0
+          </div>
+        </div>
+        <!-- Bottom right corner -->
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300">
+            absolute bottom 0 right 0
+          </div>
+        </div>
+        <!-- Span top edge -->
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300">
+            absolute inset-x-0 top-0
+          </div>
+        </div>
 
-    <!-- Top right corner -->
+        <!-- Span left edge -->
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300">
+            absolute inset-y-0 left-0
+          </div>
+        </div>
+        <!-- Span right edge -->
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300">
+            absolute inset-y-0 right-0
+          </div>
+        </div>
+        <!-- Span bottom edge -->
+        <div class="relative h-32 w-32 bg-yellow-100 m-1">
+          <p>relative parent</p>
+          <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300">
+            absolute inset-x-0 bottom-0
+          </div>
+        </div>
+      </div>
+      <div class="flex-col space-y-2">
+        <p>others</p>
+        <!-- Display Classes -->
 
-    <!-- Bottom left corner -->
+        <div class="w-100">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          ratione <span class="inline bg-red-200">display inline </span>maxime
+          iste nihil, debitis non impedit?maxime iste nihil, debitis non
+          impedit?maxime iste nihil, debitis non
+          <span class="block bg-red-200">display block</span>impedit?maxime iste
+          nihil, debitis
+          <span class="hidden bg-red-200">display hidden </span>non
+          impedit?maxime iste nihil, debitis non impedit?maxime iste nihil,
+          debitis non impedit?maxime iste nihil, debitis non impedit?maxime iste
+          nihil, debitis non impedit?
+        </div>
+        <!-- Z-Index -->
 
-    <!-- Bottom right corner -->
+        <div class="relative h-36 bg-red-300">
+          relative h-36 z index higher is front
+          <div class="absolute left-10 w-24 h-24 bg-blue-300 z-40">1</div>
+          <div class="absolute left-20 w-24 h-24 bg-blue-400">2</div>
+          <div class="absolute left-40 w-24 h-24 bg-blue-500 z-10">3</div>
+          <div class="absolute left-60 w-24 h-24 bg-blue-600 z-20">4</div>
+          <div class="absolute left-80 w-24 h-24 bg-blue-700 z-30">5</div>
+        </div>
 
-    <!-- Span top edge -->
+        <!-- Floats -->
 
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
-
-    <!-- Span bottom edge -->
-
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
+        <div class="w-2/3 bg-green-300">
+          Float
+          <img
+            class="h-36 w-36 float-left m-4"
+            src="../assets/img/img1.jpg"
+            alt=""
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            nam, nisi illum vitae neque assumenda minus id eaque dicta fuga
+            porro eligendi a molestias ducimus eum doloremque unde in sit quis
+            delectus ex exercitationem molestiae. Quos?
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
